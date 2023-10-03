@@ -10,7 +10,7 @@ body {
     background-color: #1F2937;
     color: #F9FAF8;
     font-size: 24px;
-    padding: 0rem 8rem 3rem 8rem;
+    padding: 0rem 9rem 3rem 9rem;
     display: flex;
     flex-direction: column;
 
@@ -25,7 +25,7 @@ body {
 
 .heroContainer {
     display: flex;
-    margin-top: 4rem;
+    flex-direction: row;
 }
 
 li {
@@ -38,8 +38,6 @@ li {
 
 .placeholder {
     max-width: 650px;
-    margin-left: 3rem;
-    overflow: auto;
 }
 
 .btn {
@@ -60,10 +58,66 @@ h1 {
 
 p {
     font-size: 18px;
-    color: #E5E7EB;
+    color: #9b9ea3;
 
 }
 .heroText {
     margin-right: 3rem;
     margin-top: 1rem;
 }
+
+.header2 {
+    text-align: center;
+    margin: 2rem 0rem;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0rem 8rem 3rem 8rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.picCol { 
+    max-width: 200px;
+    border: 5px solid lightblue;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .divOne {
+        padding: 0rem;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .heroContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .heroImg {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem;
+    }
+  }
