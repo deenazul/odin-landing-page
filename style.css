@@ -6,14 +6,13 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.divOne {
+.containerOne {
     background-color: #1F2937;
     color: #F9FAF8;
     font-size: 24px;
     padding: 0rem 9rem 3rem 9rem;
     display: flex;
     flex-direction: column;
-
 }
 
 .header {
@@ -56,19 +55,31 @@ h1 {
     margin-bottom: -1rem;
 }
 
-p {
+p.heroSubtext {
     font-size: 18px;
     color: #9b9ea3;
-
 }
-.heroText {
+
+p.contentSubtext {
+    font-size: 16px;
+    color: #9b9ea3;
+    margin: 0.75rem 1.2rem 1.2rem 1.2rem;
+    text-align: center;
+}
+
+.heroTitle {
     margin-right: 3rem;
     margin-top: 1rem;
+    font-size: 48px;
+    color: #F9FAF8;
 }
 
-.header2 {
+.headerText {
     text-align: center;
     margin: 2rem 0rem;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
 }
 
 .contentContainer {
@@ -85,11 +96,35 @@ p {
     justify-content: center;
     align-items: center;
 }
+
 .picCol { 
     max-width: 200px;
     border: 5px solid lightblue;
     border-radius: 15px;
     justify-content: center;
+}
+
+.containerThree {
+    background-color: #E5E7EB;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 0rem 9rem 3rem 9rem;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+p.quote {
+    color: #1F2937;
+    font-size: 36px;
+    padding: 3rem 3rem 0rem 3rem;
+    font-weight: 50;
+}
+
+p.quoteBy {
+    font-weight: bold;
+    display: flex;
+    justify-content: right;
+    padding-right: 9rem;
 }
 
 @media screen and (max-width: 600px) {
