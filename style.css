@@ -45,7 +45,10 @@ li {
     color: white;
     font-weight: bold;
     border-radius: 12px;
-    outline: none;
+}
+
+.cta {
+    border-color: #F9FAF8;
 }
 
 h1 {
@@ -108,9 +111,9 @@ p.contentSubtext {
     background-color: #E5E7EB;
     font-style: italic;
     font-weight: lighter;
-    padding: 0rem 9rem 3rem 9rem;
-    /* display: flex;
-    flex-direction: column; */
+    padding: 3rem 9rem 6rem 9rem;
+    display: flex;
+    flex-direction: column;
 }
 
 p.quote {
@@ -127,8 +130,50 @@ p.quoteBy {
     padding-right: 9rem;
 }
 
+.containerFour {
+    padding: 3rem 9rem 6rem 9rem;
+
+}
+
+.ctaContainer {
+    background-color: #3882F6;
+    margin: 4rem;
+    padding: 2rem;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+}
+.ctaTextContainer {
+    padding-left: 2rem;
+} 
+
+.ctaText {
+    font-style: italic;
+}
+
+.ctaBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+
+}
+
+.btn.cta {
+    border-color: #F9FAF8;
+    border-style: solid;
+}
+
+.footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 16px;
+    text-align: center;
+}
 @media screen and (max-width: 600px) {
-    .divOne {
+    .containerOne {
         padding: 0rem;
     }
     
@@ -154,5 +199,32 @@ p.quoteBy {
         flex-direction: column;
         justify-content: center;
         padding: 0rem;
+    }
+
+    .containerTwo {
+        padding: 0;
+    }
+    .containerThree {
+        padding: 0;
+    }
+    .containerFour {
+        padding: 0;
+    }
+    .ctaContainer {
+        margin: 0;
+        padding: 0;
+        flex: 0;
+        display: flex;
+        flex-direction:column;
+    }
+    .ctaText {
+        font-style: italic;
+    }
+    
+    .ctaBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 1;
     }
   }
